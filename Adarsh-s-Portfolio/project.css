@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6f6;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(248, 248, 248, 0.9);
+    backdrop-filter: blur(10px);
+    color: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* button {
+    padding: 1rem;
+    width: 8rem;
+    font-size: medium;
+    background-color: transparent;
+    color: black;
+    border: #353535 0.1rem solid;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #353535;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+} */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+
+main {
+    padding-top: 3rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 80px auto 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.project {
+    overflow: hidden;
+    border-radius: 2rem; /* Slightly reduced border radius for a modern look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adjusted shadow for 3D effect */
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.project:nth-child(3n+1) {
+    transition-delay: 0.1s;
+}
+
+.project:nth-child(3n+2) {
+    transition-delay: 0.2s;
+}
+
+.project:nth-child(3n+3) {
+    transition-delay: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Slightly reduced translateY for a more subtle hover effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); /* Adjusted shadow on hover */
+}
+
+.project img {
+    margin: auto; /* Center the image horizontally */
+    display: block;
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 2.5rem;
+    padding: 1rem; /* Add space around the image */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.project-info p {
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 0 10px;
+    padding: 1rem;
+    text-align: center;
+    width: 8rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button.demo,
+.button.github {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.button.demo:hover,
+.button.github:hover {
+    cursor: pointer;
+}
+
+.button.github {
+    background: none;
+    color: black;
+}
+
+.button.demo,
+.button.github:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.button.demo:hover {
+    background: rgb(0, 0, 0);
+}
+
+.button.github:hover {
+    background: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    top: 5rem;
+    bottom: 0;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: black;
+    color: #fff;
+    border: #777 0.1rem solid;
+}
+
+.dark-mode button:hover {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode nav ul li a {
+    color: #fff;
+}
+
+.dark-mode .container h2 {
+    color: #fff;
+}
+
+.dark-mode .project {
+    border-radius: 2rem;
+    background-color: black;
+    box-shadow: 0 0 20px 7px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.dark-mode .project:hover {
+    transform: translateY(-10px); /* Keep the same transformation on hover */
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5);
+}
+
+
+.dark-mode .button.demo,
+.dark-mode .button.github {
+    border: #777 0.1rem solid;
+}
+
+.dark-mode .button.github {
+    background: none;
+    color: #fff;
+}
+
+.dark-mode .button.demo,
+.dark-mode .button.github:hover {
+    background: white;
+    color: black;
+}
+
+.dark-mode .button.demo:hover {
+    background: #000;
+    color: white;
+}
+
+.dark-mode .button.github:hover {
+    background: white;
+    color: black;
+}
+
+.dark-mode footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode .social-icons a img {
+    filter: invert(1);
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav ul li {
+      margin-right: 1rem;
+    }
+
+    nav ul li:nth-child(1),
+    nav ul li:nth-child(2),
+    nav ul li:nth-child(3) {
+        display: none;
+      }
+   
+    .container h2 {
+      font-size: 24px;
+    }
+
+    .project-info h3 {
+      font-size: 18px;
+    }
+  
+    .project-info p {
+      font-size: 14px;
+    }
+  
+    .button {
+      padding: 0.8rem;
+      width: 7rem;
+    }
+  
+  }
+  
+  [data-aos] {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    [data-aos="fade-right"],
+    [data-aos="fade-left"] {
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    
+    [data-aos="fade-up"] {
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+    }
+  }
+  

@@ -1,0 +1,513 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adarsh Mishra</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body onload="myFunction()">
+   
+    <div id="loading">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle id="test" cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+
+
+
+    <nav id="desktop-nav">
+        <div class="logo">Adarsh Mishra</div>
+        <div class="menubar">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img src="/media/moon.png" id="icon">
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Adarsh Mishra</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+            <img src="/media/moon.png" id="icon-mini">
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container" data-aos="fade-right">
+            <img src="media/myprofile.jpeg" alt="Adarsh's profile picture" />
+        </div>
+        <div class="section__text" data-aos="fade-down">
+            <p class="section__text__p1" data-aos="fade-down">Hello, I'm</p>
+            <h1 class="title" data-aos="fade-down">Adarsh Mishra</h1>
+            <p class="section__text__p2">I'm <span class="typedText"></span></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('media/MyResume(Entry).pdf')">
+                    View Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/adarsh-mishra-06446b288/"><i class="uil uil-linkedin-alt"></i></a>
+                <a href="https://github.com/adarsh-145"><i class="uil uil-github-alt"></i></a>
+                <a href="https://www.instagram.com/mishrra.jii/"><i class="uil uil-instagram-alt"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title" data-aos="fade-down">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container" data-aos="fade-right">
+                <img src="media/profile.jpeg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers" data-aos="fade-right">
+                    <div class="details-container" data-aos="fade-right">
+                        <img src="./media/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p><h4>Full-Stack Developer: </h4>Participated in developing open-source full stack web application using MERN <br> At 
+                          <h4>  Asaan Jobs (Nov,2024 - Present)</h4> </p>  
+                          <br>
+
+                        
+                    </div>
+                    <div class="details-container" data-aos="fade-left">
+                        <img src="./media/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Tech Bachelors Degree
+                            Computer Science & Specialization in Data Science</p>
+                    </div>
+                </div>
+                <div class="text-container" data-aos="fade-down">
+                    <p>
+                        Innovative Software Developer with hands-on experience in building scalable applications, 
+                        optimizing system performance, and developing user-centric solutions. Proficient in C++, 
+                        Java, Python, and React, with a strong background in full-stack development and cloud computing. 
+                        Gained practical exposure through internships at PrepInsta and Asaan Jobs,
+                        working on end-to-end development and deployment of software products. 
+                        Currently pursuing a Bachelor’s in Computer Science, expected to graduate in 2026, 
+                        with a focus on software engineering principles and system design. 
+                        Passionate about creating impactful software solutions and open to collaborating on 
+                        cutting-edge projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./media/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title" data-aos="fade-down">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container" data-aos="fade-right">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JAVA</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container" data-aos="fade-left">
+                    <h2 class="experience-sub-title">Technologies/Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>GitHub & GitBash</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>REACT.JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Express.JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Flask</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Numpy</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Pandas</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Matplotlib</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Seaborn</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Tableau Desktop</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Power BI Desktop</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container" data-aos="fade-left">
+                <h2 class="experience-sub-title">Database/Cloud</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>MySQL</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>MongoDB</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>AWS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./media/checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Vercel</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <img src="./media/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title" data-aos="fade-down">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container" data-aos="fade-right">
+                    <div class="article-container">
+                        <img src="media/rbuilder.png" alt="Flipkart WebScrap - Flask App Project"
+                            class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">OneClick Resume: Build Resume Online</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/adarsh-145/Online-Resume-Builder'">
+                            GitHub
+                        </button>
+
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://online-resume-builder-nu.vercel.app/'">
+                  Live Demo
+                </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container" data-aos="fade-down">
+                    <div class="article-container">
+                        <img src="media/calculator.jpeg" alt="Calcii Project" class="project-img" />
+                    </div>
+                    <h2 class="skilla-sub-title project-title">Calcii:A Simple Calculator  </h2>
+                    <div class="btn-container">
+                        <!-- <button class="btn btn-color-2 project-btn"
+                            Loading...
+                        </button> -->
+                        <button class="btn btn-color-2 project-btn" >
+                  Loading......
+                </button>
+                    </div>
+                </div>
+
+                <!-- <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./media/project-snaps/insight-edge.png" alt="InsightEdge Project" class="project-img" />
+              </div>
+              <h2 class="skills-sub-title project-title">InsightEdge</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/kautilyakameshmishra/Insight-EDGE'">
+                  GitHub
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                  Live Demo
+                </button>
+              </div>
+            </div> -->
+
+                <div class="details-container color-container" data-aos="fade-left">
+                    <div class="article-container">
+                        <img src="media/logo-removebg.png" alt="Mini-Projects" class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">YTPC: YouTube Playlist's Length Calculator</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            <!-- onclick="location.href='https://github.com/Anuragpandey0408/Iris-Dataset-Project.git'"> -->
+                            Loading.....
+                        </button>
+                        <!--<button class="btn btn-color-2 project-btn" onclick="navigateToProjectPage()">
+                            Live Demo
+                        </button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Centered "View All" Button -->
+        <!-- <button class="btn btn-color-2 project-btn btn-project-page" onclick="location.href='./project.html'">
+            View All
+        </button> -->
+
+        <img src="./media/arrow.png" src-light="./media/arrow.png" src-dark="./media/arrow.png" alt="Arrow icon"
+            class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <!--Blog Section-->
+    <section id="blog">
+        <p class="section__text__p1">Read My Blog</p>
+        <h1 class="title" data-aos="fade-down">Blog</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                 <div class="details-container color-container" data-aos="fade-right">
+                    <div class="article-container">
+                        <img src="media/pic1.png" alt="Data Visualization: Empowering Business with Effective
+                        Insights Job Simulation" class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">Thar garage: Customize Your THAR as you want
+         <br> Forage- Tata Group</h2>
+                    <div class="btn-container">
+                        <!-- <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://medium.com/@anuragpandey04/data-visualization-empowering-business-with-effective-insights-job-simulation-forage-tata-group-94b22997f751'">
+                            View My Blog 
+                        </button>  -->
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/kautilyakameshmishra/MERN-Estate'">
+                  Live Demo
+                </button> -->
+                    </div>
+                </div> -->
+                <!--blog 2-->
+                <div class="details-container color-container" data-aos="fade-left">
+                    <div class="article-container">
+                        <img src="./media/blog2.png" alt="Data Visualization: Empowering Business with Effective
+                        Insights Job Simulation" class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">Working on It.</h2>
+                    <div class="btn-container">
+                        <!-- <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://medium.com/@anuragpandey04/gen-ai-gen-z-shaping-the-future-of-work-7fa8260c46de'">
+                            View My Blog
+                        </button> -->
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/kautilyakameshmishra/MERN-Estate'">
+                  Live Demo
+                </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add this button after your blog containers -->
+        <!-- <button class="btn btn-color-2 project-btn btn-project-page" onclick="location.href='./blog.html'">
+            View All
+        </button> -->
+        <img src="./media/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title" data-aos="fade-down">Contact Me</h1>
+        <div class="contact-info-upper-container" data-aos="fade-up">
+            <div class="contact-info-container" data-aos="fade-right">
+                <a href="mailto:adarshengineer145@gmail.com"><i class="uil uil-envelope"></i></a>
+                <p><a href="mailto:adarshengineer145@gmail.com">Mail</a></p>
+            </div>
+            <div class="contact-info-container" data-aos="fade-up">
+                <a href="https://www.linkedin.com/in/adarsh-mishra-06446b288/"><i class="uil uil-linkedin-alt"></i></a>
+                <p><a href="https://www.linkedin.com/in/adarsh-mishra-06446b288/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container" data-aos="fade-left">
+                <a href="tel:+918881185469"><i class="uil uil-phone"></i></a>
+                <p><a href="tel:+91 8881185469">+91 8881185469</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Adarsh Mishra. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                setTimeout(function () {
+                    icon.src = "media/sun.png";
+                }, 200);
+            } else {
+
+                setTimeout(function () {
+                    icon.src = "media/moon.png";
+                }, 200);
+            }
+        }
+
+        var iconmini = document.getElementById("icon-mini");
+
+        iconmini.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                setTimeout(function () {
+                    iconmini.src = "media/sun.png";
+                }, 200);
+            } else {
+
+                setTimeout(function () {
+                    iconmini.src = "media/moon.png";
+                }, 200);
+            }
+        }
+
+        var preloader = document.getElementById('loading');
+        function myFunction() {
+            preloader.style.display = 'none'
+        }
+
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out-cubic'
+        });
+
+    </script>
+
+</body>
+
+</html>
